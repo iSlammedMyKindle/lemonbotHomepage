@@ -40,6 +40,12 @@
                 background-color: red;
             }
 
+            button.page-link:focus {
+                box-shadow: none;
+                outline: 5px auto Highlight;
+                outline: 5px auto -webkit-focus-ring-color;
+            }
+
             .discordServerDisplay{
                 background-color: #33363b;
                 /* border: .15em solid #6d737c; */
@@ -293,11 +299,11 @@
         <h2 class='newSection' id='cmdList'>Here's my full list of commands:</h2>
         
         <ul class="pagination pagination-lg justify-content-center" onclick='console.log(arguments)'>
-            <li class="page-item"><span class="page-link cmdCat" data-cat="tools">Tools</span></li>
-            <li class="page-item"><span class="page-link cmdCat" data-cat="memes">Memes</span></li>
-            <li class="page-item"><span class="page-link cmdCat" data-cat="games">Games</span></li>
-            <li class="page-item"><span class="page-link cmdCat" data-cat="text">Text</span></li>
-            <li class="page-item"><span class="page-link cmdCat" data-cat="eliza">Eliza</span></li>
+            <li class="page-item"><button class="page-link cmdCat" data-cat="tools">Tools</button></li>
+            <li class="page-item"><button class="page-link cmdCat" data-cat="memes">Memes</button></li>
+            <li class="page-item"><button class="page-link cmdCat" data-cat="games">Games</button></li>
+            <li class="page-item"><button class="page-link cmdCat" data-cat="text">Text</button></li>
+            <li class="page-item"><button class="page-link cmdCat" data-cat="eliza">Eliza</button></li>
         </ul>
         
         <table id='fullCmdList' class='cmdTable'></table>
@@ -329,7 +335,7 @@
             </tbody>
         </table>
         <footer class='newSection'>
-            <p><a href="http://github.com/iSlamemdMyKindle"> <img class='footerIcon' src="./assets/iSlammedMyKindlePathObj.svg"> <br><button type="button" class="btn btn-success">By iSlamemdMyKindle</button></a></p>
+            <p><a href="http://github.com/iSlamemdMyKindle"> <img class='footerIcon' src="./assets/iSlammedMyKindlePathObj.svg"> <br><button type="button" class="btn btn-success">By iSlammedMyKindle</button></a></p>
             <p><a href="https://github.com/iSlammedMyKindle/lemonBot"><img class='footerIcon' src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"> <br> <button type="button" class="btn btn-success">Source code!</button></a></p>
             <p><a href="http://creativecommons.org/licenses/by/4.0/"><img title="This work is licensed under a Creative Commons Attribution 4.0 International License." src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a></p>
         </footer>
